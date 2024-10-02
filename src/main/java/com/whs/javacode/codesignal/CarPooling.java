@@ -45,3 +45,13 @@ public class CarPooling {
 		System.out.println(canCompleteTrips(trips, capacity)); // Output: false
 	}
 }
+
+/*
+In this problem, we are simulating a carpool scenario. 
+A car has a certain number of empty seats (given by capacity), and it can only drive in one direction—east. 
+We are provided with an array trips, where each element is a trip described by three integers: numPassengers, from, and to. 
+These respectively represent the number of passengers for that trip, the kilometer mark where the passengers will be picked up, 
+and the kilometer mark where they will be dropped off. Our task is to determine if the car can successfully complete all the 
+given trips without ever exceeding its seating capacity. If it is possible to pick up and drop off all passengers for all the 
+trips without going over capacity at any point, we return true. Otherwise, we return false.
+*/
