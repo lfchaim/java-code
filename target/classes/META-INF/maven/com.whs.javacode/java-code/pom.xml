@@ -4,4 +4,11 @@
   <artifactId>java-code</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>java-code</name>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.jsoup</groupId>
+  		<artifactId>jsoup</artifactId>
+  		<version>1.18.1</version>
+  	</dependency>
+  </dependencies>
 </project>
