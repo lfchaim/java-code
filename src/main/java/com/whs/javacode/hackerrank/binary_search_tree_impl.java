@@ -1,11 +1,11 @@
 package com.whs.javacode.hackerrank;
 
-class Node {
+class Node4 {
 	int data;
-	Node left;
-	Node right;
+	Node4 left;
+	Node4 right;
 
-	Node(int data) {
+	Node4(int data) {
 		this.data = data;
 		left = right = null;
 	}
@@ -13,11 +13,11 @@ class Node {
 
 public class binary_search_tree_impl {
 
-	public static Node insert(Node root, int data) {
+	public static Node4 insert(Node4 root, int data) {
 		if (root == null)
-			return new Node(data);
+			return new Node4(data);
 		else {
-			Node cur;
+			Node4 cur;
 			if (data <= root.data) {
 				cur = insert(root.left, data);
 				root.left = cur;
@@ -35,7 +35,7 @@ public class binary_search_tree_impl {
 	public static void main(String[] args) {
 
 		int data[] = { 4, 2, 1, 3, 8, 9 };
-		Node root = null;
+		Node4 root = null;
 		for (int i = 0; i < data.length; i++) {
 			insert(root, data[i]);
 		}

@@ -3,36 +3,37 @@ package com.whs.javacode.hackerrank;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Node<T> {
-    private List<Node<T>> children = new ArrayList<Node<T>>();
-    private Node<T> parent = null;
+public class NodeS<T> {
+	
+    private List<NodeS<T>> children = new ArrayList<NodeS<T>>();
+    private NodeS<T> parent = null;
     private T data = null;
 
-    public Node(T data) {
+    public NodeS(T data) {
         this.data = data;
     }
 
-    public Node(T data, Node<T> parent) {
+    public NodeS(T data, NodeS<T> parent) {
         this.data = data;
         this.parent = parent;
     }
 
-    public List<Node<T>> getChildren() {
+    public List<NodeS<T>> getChildren() {
         return children;
     }
 
-    public void setParent(Node<T> parent) {
+    public void setParent(NodeS<T> parent) {
         parent.addChild(this);
         this.parent = parent;
     }
 
     public void addChild(T data) {
-        Node<T> child = new Node<T>(data);
+    	NodeS<T> child = new NodeS<T>(data);
         child.setParent(this);
         this.children.add(child);
     }
 
-    public void addChild(Node<T> child) {
+    public void addChild(NodeS<T> child) {
         child.setParent(this);
         this.children.add(child);
     }

@@ -6,8 +6,6 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-import hack.Delete_Even.LinkedListNode;
-
 public class Delete_odd
 {
 	public static class LinkedListNode

@@ -2,8 +2,6 @@ package com.whs.javacode.hackerrank;
 
 import java.util.Scanner;
 
-import org.omg.Messaging.SyncScopeHelper;
-
 public class blackfriday
 {
 

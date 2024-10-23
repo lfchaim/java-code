@@ -1,18 +1,18 @@
 package com.whs.javacode.hackerrank;
 
-class person {
+class Person {
 	int age;
 	String name;
 
-	person(int age, String name) {
+	Person(int age, String name) {
 		this.age = age;
 		this.name = name;
 	}
 }
 
 class dead_lock {
-	person p1 = new person(25, "umesh");
-	person p2 = new person(23, "murali");
+	Person p1 = new Person(25, "umesh");
+	Person p2 = new Person(23, "murali");
 
 	Thread t1 = new Thread(" ") {
 		public void run() {
