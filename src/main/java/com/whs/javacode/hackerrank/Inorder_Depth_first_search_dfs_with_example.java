@@ -33,11 +33,11 @@ package com.whs.javacode.hackerrank;
 
 // If you know that the tree has an inherent sequence in the nodes, and you want to flatten the tree back into its original sequence, than an in-order traversal should be used. The tree would be flattened in the same way it was created. A pre-order or post-order traversal might not unwind the tree back into the sequence which was used to create it.
 
-class Inorder_Depth_first_search_dfs {
+class Inorder_Depth_first_search_dfs_with_example {
 	// Root of Binary Tree
 	static Node root;
 
-	Inorder_Depth_first_search_dfs() {
+	Inorder_Depth_first_search_dfs_with_example() {
 		root = null;
 	}
 
