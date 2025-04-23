@@ -39,7 +39,7 @@ public class Arrays_DS {
 	public static void main(String[] args) throws IOException {
 		int chA = (int)'A';
 		List<Integer> list = new ArrayList<>();
-		for( int i = 0; i < 27; i++ ) {
+		for( int i = 0; i < 26; i++ ) {
 			list.add(chA++);
 		}
 		Result res = new Result();
